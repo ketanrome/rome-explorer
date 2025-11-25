@@ -1,0 +1,73 @@
+@import 'tailwindcss';
+
+@font-face {
+  font-family: TestUnitedSans;
+  font-style: normal;
+  font-weight: 200;
+  src: url('/fonts/TestUntitledSans-Light.otf') format('opentype');
+}
+
+@font-face {
+  font-family: TestUnitedSans;
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/TestUntitledSans-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: TestUnitedSans;
+  font-style: normal;
+  font-weight: 600;
+  src: url('/fonts/TestUntitledSans-Medium.otf') format('opentype');
+}
+
+@font-face {
+  font-family: TestUnitedSans;
+  font-style: normal;
+  font-weight: 700;
+  src: url('/fonts/TestUntitledSans-Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: TestUnitedSans;
+  font-style: normal;
+  font-weight: 900;
+  src: url('/fonts/TestUntitledSans-Black.otf') format('opentype');
+}
+
+@theme {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-test: 'TestUnitedSans';
+  --color-primary: #5e0a60;
+  --color-gray: #d0d0d0;
+  --background-table: linear-gradient(122deg, #fed8ff -3.13%, #5e0a60 115.52%);
+  --shadow-btn: 0px 4px 19.3px 0px rgba(214, 158, 214, 0.7) inset;
+  --shadow-gray: 0px 4.034px 50px 0px rgba(0, 0, 0, 0.1) inset;
+  --shadow-menu: 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
+  --radius-btn: 20px;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #ffffff;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
